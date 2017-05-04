@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic|Hind|Kalam|Muli');
+
+body {
+  background: url("background.jpeg") no-repeat;
+}
+
+h1, h2{
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+p, li, h3{
+  font-family: 'Muli', sans-serif;
+  color: white;
+}
+
+a:visited{
+  color: black;
+}
+
+a:link{
+  color:white;
+}
+
+footer {
+  color:white;
+  float: left;
+}
+
+#maincontent {
+  background: rgba(255,255,255,0.1);
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+#navigation {
+  width: 100%;
+  padding: 2px 0;
+}
+
+#navigation a {
+  background: rgba(255,255,255,0.1);
+  float:left;
+  display: block;
+  padding:10px 8%;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Muli', sans-serif;
+}
+
+.mypic {
+  float: right;
+}
+
+.introduction {
+  max-width: 960px;
+  min-width: 320px;
+  text-align: center;
+  margin:0 auto;
+  background: grey;
+  padding: 50px 80px;
+}
+
+.bgim1, .bgim2, .bgim3, .bgim4 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgim1 {
+  background-image: url(DOTA2.jpg);
+  min-height: 600px;
+  margin-top: 60px;
+}
+
+.bgim2 {
+  background-image: url(hearthstone.jpg);
+  min-height: 600px;
+}
+
+.bgim3 {
+  background-image: url(overwatch.jpg);
+  min-height: 600px;
+}
+
+.bgim4 {
+  background-image: url(fate_grand_order.jpg);
+  min-height: 600px;
+}
