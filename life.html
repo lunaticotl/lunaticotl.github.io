@@ -14,24 +14,131 @@
           <a href="resume.html">Résumé</a>
           <a href="life.html">My Life</a>
           <a href="hobbies.html">My Hobbies</a>
-          <a href="works.html">My Works</a>
+          <a href="works.html">My Projects</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <section id=maincontent>
-        <p>1995 August 7th, I was born in Shanghai, China</p>
+      <section id="maincontent-life">
+        <!--Here is the change-->
+        <div class="fragment-wrap" id="frag-1" style="background-image: url(Shanghai.jpg)">
+          <div class="fragment">
+		          <div class="fragment__piece"></div>
+	        </div>
+	        <div class="fragment">
+		          <div class="fragment__piece"></div>
+	        </div>
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+        <!--until here-->
+          <h2 class="text-right">1995</h2>
+          <p class="text-right-up">1995 August 7th, I was born in Shanghai, China. Shanghai is a beautiful city. I love it with all my heart.</p>
+        </div>
 
-        <p>I love my parents. They have sacrificed a lot to support me. I will try my best to make them live better</p>
+        <div class="fragment-wrap" id="frag-2" style="background-image: url(myparent.png)">
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <h2 class="text-left">My family</h2>
+          <p class="text-left-up">I love my parents. They have sacrificed a lot to support me. I will try my best to make them live better</p>
+        </div>
 
-        <p>I was graduated from No.1 High School Affiliated to China Eastern Normal Univeristy. This is where everything begins. I learned a lot from in this place.</p>
+        <div class="fragment-wrap" id="frag-3" style="background-image: url(myschool.jpg)">
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+        <h2 class="text-right">2010</h2>
+        <p class="text-right-up">I was graduated from No.1 High School Affiliated to China Eastern Normal Univeristy. This is where everything begins. I learned a lot from in this place.</p>
+        </div>
 
-        <p>In 2013, I started my life in America. University of Miami has borne a lot of precious memories. Sadly, I am about to graduate. However, my future is not decided yet. It's time to look forward!</p>
+        <div class="fragment-wrap" id="frag-4" style="background-image: url(um.jpg)">
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <div class="fragment">
+              <div class="fragment__piece"></div>
+          </div>
+          <h2 class="text-left">2013</h2>
+          <p class="text-left-up">In 2013, I started my life in America. University of Miami has borne a lot of precious memories. Sadly, I am about to graduate. However, my future is not decided yet. It's time to look forward!</p>
+        </div>
 
 
       </section>
     </main>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+			(function() {
+				imagesLoaded(document.querySelectorAll('.fragment-wrap'), { background: true }, function() {
+					document.body.classList.remove('loading');
+					new FragmentsFx(document.getElementById('frag-1'), {
+						fragments: 15,
+						boundaries: {x1: 100, x2: 100, y1: 50, y2: 50},
+						randomIntervals: {
+							top: {min: 0,max: 90},
+							left: {min: 0,max: 90},
+							dimension: {
+								width: {min: 5,max: 20, fixedHeight: 5},
+								height: {min: 10,max: 50, fixedWidth: 5}
+							}
+						}
+          });
+          new FragmentsFx(document.getElementById('frag-3'), {
+						fragments: 15,
+						boundaries: {x1: 100, x2: 100, y1: 50, y2: 50},
+						randomIntervals: {
+							top: {min: 0,max: 90},
+							left: {min: 0,max: 90},
+							dimension: {
+								width: {min: 5,max: 20, fixedHeight: 5},
+								height: {min: 10,max: 50, fixedWidth: 5}
+							}
+						}
+					});
+          new FragmentsFx(document.getElementById('frag-4'), {
+						fragments: 15,
+						boundaries: {x1: 100, x2: 100, y1: 50, y2: 50},
+						randomIntervals: {
+							top: {min: 0,max: 90},
+							left: {min: 0,max: 90},
+							dimension: {
+								width: {min: 5,max: 20, fixedHeight: 5},
+								height: {min: 10,max: 20, fixedWidth: 5}
+							}
+						}
+					});
+        });
+			})();
+		</script>
     <footer>
       <p>#403A, Building 4, 1575 Liguria Ave·Coral Gables, FL33146</p>
       <p>305-979-8870· y.lu23@umiami.edu</P>
